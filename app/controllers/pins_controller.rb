@@ -1,5 +1,4 @@
 class PinsController < ApplicationController
-  
   def index
     @pins = Pin.all
   end
@@ -48,6 +47,6 @@ class PinsController < ApplicationController
   private
 
   def pin_params
-    params.require(:pin).permit(:title, :url, :slug, :text, :category_id)
+    params.require(:pin).permit(:title, :url, :slug, :text, :image)
   end
 end

@@ -38,4 +38,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # Paperclip environment configuration from Skillcrush
+  Paperclip.options[:command_path] = "C:\\Program\ File\\ImageMagick-6.9.3-Q16\\"
+
 end
