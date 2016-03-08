@@ -41,5 +41,13 @@ Rails.application.configure do
 
   # Paperclip environment configuration from Skillcrush
   Paperclip.options[:command_path] = "C:\\Program\ File\\ImageMagick-6.9.3-Q16\\"
-
+  # Paperclip remote storage
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => "skillcrush-rails",
+      :access_key_id => "AKIAI4Y7CIUPPOFAYN2Q",
+      :secret_access_key => "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"
+    }
+  }
 end
